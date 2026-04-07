@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { default: makeWASocket, useMultiFileAuthState } = require("@whiskeysockets/baileys");
 const axios = require("axios");
 const qrcode = require("qrcode-terminal");
@@ -41,7 +42,7 @@ async function startBot() {
                 },
                 {
                     headers: {
-                        Authorization: "sk-cfa7520a3e324da287e457130833e2d4",
+                        Authorization: `Bearer ${process.env.DEEPSEEK_API_KEY}`,
                         "Content-Type": "application/json"
                     }
                 }
@@ -59,4 +60,4 @@ async function startBot() {
     });
 }
 
-startBot();
+startBot();
