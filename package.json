@@ -4,18 +4,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
-  }
-
-{
-  "name": "wa-ai-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.0.0",
+    "axios": "^1.6.0",
+    "qrcode-terminal": "^0.12.0"
+  }
 }
